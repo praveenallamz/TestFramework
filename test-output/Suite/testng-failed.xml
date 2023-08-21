@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="5" name="Paralleltest1(failed)" parallel="methods">
+    <parameter name="port" value="4747"/>
+    <parameter name="platformVersion" value="7.1.1"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="deviceName" value="emulator-5554"/>
+    <parameter name="URL" value="127.0.0.1"/>
+    <classes>
+      <class name="step_definitions.MobileParallel">
+        <methods>
+          <include name="click_on_SKIP_SIGN_in_button"/>
+          <include name="select_item_by_category_in_the_application"/>
+          <include name="verify_selected_item_is_added_to_cart_on_screen"/>
+        </methods>
+      </class> <!-- step_definitions.MobileParallel -->
+    </classes>
+  </test> <!-- Paralleltest1(failed) -->
+  <test thread-count="5" name="Paralleltest2(failed)" parallel="methods">
+    <parameter name="port" value="4737"/>
+    <parameter name="platformVersion" value="7.1.1"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="deviceName" value="emulator-5556"/>
+    <parameter name="URL" value="127.0.0.1"/>
+    <classes>
+      <class name="step_definitions.MobileParallel">
+        <methods>
+          <include name="click_on_SKIP_SIGN_in_button"/>
+          <include name="select_item_by_category_in_the_application"/>
+          <include name="verify_selected_item_is_added_to_cart_on_screen"/>
+        </methods>
+      </class> <!-- step_definitions.MobileParallel -->
+    </classes>
+  </test> <!-- Paralleltest2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

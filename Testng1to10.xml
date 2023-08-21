@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="step_definitions.MobileParallel"/>
+      <class name="step_definitions.Hooks"/>
+      <class name="utilities.HTMLReportUtil"/>
+      <class name="step_definitions.MobileParallFunctions"/>
+      <class name="restutil.UseCase1Test"/>
+      <class name="mobileutil.MobileParallFunctions"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
